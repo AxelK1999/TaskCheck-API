@@ -33,6 +33,7 @@ La misma presenta una version que contiene como base de datos un archivo JSON [u
     - Routes : rutas especifican qué controlador y función de controlador deben ejecutarse cuando se recibe una solicitud en una URL específica. 
 
 ## Intalacion y configuracion
+- Instalar Mongo DB : https://www.mongodb.com/try/download/community
 - Instalar Node.js : https://nodejs.org
 - Clonar proyecto del repositiorio : `git clone https://github.com/AxelK1999/TaskCheck-API.git`
 - Estando posicionado en la carpeta del proyecto previamente clonado, en la terminal:
