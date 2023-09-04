@@ -1,6 +1,6 @@
 # Proyecto: Api Task Check
-***
-##Descripcion : 
+
+## Descripcion : 
 
 Consiste en una api que permite administrar notas y listas de tareas a realizar de ususarios registrados previemente, estas estan organizadas dentro de un espacio de trabajo que posee cada ususario, esta compuesta por secciones (creadas y tituladas por el usuaruio) que contienen tarjetas, cada una de ellas con notas y listas de tareas correspondientes a la vinculadas y creadas para el cumplimiento de la actividad que represente esa tarjeta en particular. 
 
@@ -52,7 +52,7 @@ DELETE `http://localhost:3000/api/1.0/notes/card`
 
 Que se encuentran en : `app/routes/notes.js` y `app/routes/users.js` sin embargo se presenta la siguiente alternativa para poder probar: 
 
-######Base de datos JSON :
+###### Base de datos JSON :
 
     Registro de cuenta :
         En el proyecto acceder y modificar/definir su datos de cuenta : app/views/request_Api/register.html .
@@ -79,7 +79,7 @@ Que se encuentran en : `app/routes/notes.js` y `app/routes/users.js` sin embargo
         Para intercambiar Cards definir y acceder a "app/views/request_Api/changePositionCard.html" y acceder a http://localhost:3000/api/1.0/views/exchangePositionCard .
         Para intercambiar Sections definir y acceder a "app/views/request_Api/changeSectionCard.html" y acceder a http://localhost:3000/api/1.0/views/changeSectionCard .
 
-######Base de datos Mongo DB :
+###### Base de datos Mongo DB :
 
     Registro de cuenta :
         En el proyecto acceder y modificar/definir su datos de cuenta : app/views/request_Api/registerMongo.html .
@@ -92,6 +92,6 @@ Que se encuentran en : `app/routes/notes.js` y `app/routes/users.js` sin embargo
         Para actualizar/editar datos del usuario acceder y definirlos en "app/views/request_Api/updateUserMongo.html" y acceder a http://localhost:3000/api/1.0/views/updateUserM .
         Para leer los datos de usuario acceder a http://localhost:3000/api/1.0/users/M .
 -------
-##UI (pendiente) : 
+## UI (pendiente) : 
 
 ![Alt text](/esquema%20y%20diseño/image.png)
