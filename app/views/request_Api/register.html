@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Request</title>
+</head>
+<body>
+    
+    <script>
+        
+            const body = {                
+                "email" : "axelx45@hotmail.com",
+                "name":"userName",
+                "password" : "67888"
+            };
+
+            let requestOptions = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            };
+
+            let url = "http://localhost:3000/api/1.0/auth/registerJ";
+
+            fetch(url, requestOptions)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Respuesta del servidor:', data);
+                })
+                .catch(error => {
+                    console.error('Error al enviar la solicitud:', error);
+                });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update user Request</title>
+</head>
+<body>
+    
+    <script>
+      
+            let body = {                
+                "email" : "axelx45@hotmail.com",
+                "name":"axel",
+                "password" : "67888",
+                "newPassword":"67112"
+            };
+
+            let requestOptions = {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            };
+
+            let url = "http://localhost:3000/api/1.0/users/J"
+
+            fetch(url, requestOptions)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Respuesta del servidor:', data);
+                })
+                .catch(error => {
+                    console.error('Error al enviar la solicitud:', error);
+                });
+
+    </script>
+
+</body>
+</html>

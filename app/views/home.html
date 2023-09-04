@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Home</title>
+</head>
+<body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/notesComponents.js"></script>
+<nav>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">WorkSpace</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Spaces</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">WorkSpace</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Other WorkSpace</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Add user + </a>
+        </li>
+      </ul>
+</nav>
+  <!-- conteneodr de -->
+  <div class = "d-flex flex-row contenedor-list-cards mt-4">
+
+    <!--seccion-->
+    <div class="text-center me-3 mx-3 seccion" key = "1" style="width: 15rem;">
+      <h4 class="seccion-title">Title</h4>
+
+      <!--tarjeta-->
+      <div class="card text-start mb-2 mt-2" key="1" style="width: 15rem;">
+
+        <div class="card-body ">
+
+          <div class="mb-3 card-body-preview" id="miDiv" data-toggle="modal" data-target="#miModal">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Checks 1/6</h6>
+          </div>
+
+          <!--Modal-->
+          <div class="modal mt-5 card-body-modal"  id="miModal" tabindex="-1">
+              <div class="modal-content modal-dialog modal-contnet">
+
+                <div class="modal-header modal-contnet-header">
+                  <h5 class="modal-title" contenteditable="true">Modal title</h5>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+
+
+                <div class="modal-body modal-contnet-body">
+                  <h6>Notes</h6>
+                  <textarea class="form-control mb-3 rounded shadow-sm notes" rows="4"></textarea>
+
+                  <div class="Container-Check-list">
+
+                       <!--check list
+                      <div class="form-control mb-3 rounded shadow-sm check-list" key = "1">
+                        <h6 style="display: inline-block;"> Titulo del check list </h6>
+                      
+                        -----------item------------
+                        <div class="form-check item-check" key = "2">
+                          <input class="form-check-input mt-2" type="checkbox" id="tareaCheck">
+                          <div class="btn-group">
+                            <textarea class="form-control" id="tareaTexto" rows="1" cols="40">Tarea completada</textarea>
+                            <button type="button" class="btn  btn-danger"> <img src="icons/trash3-fill.svg" height="18px"> </button>
+                          </div>
+                        </div> 
+                        ---------------------------------
+
+                        <div class="footer-check-list mt-3 mx-2 mb-2">
+                          <a class="text-decoration-none mx-5 me-5" href="">Check +</a>
+                          <a class="text-decoration-none mx-5" href="">Delete check list</a>
+                        </div>
+
+                      </div>
+                      ------------------------------------->
+
+                    </div>
+                  <button type="button" class="btn btn btn-outline-secondary" onclick="addCheckList(1,1)">Check List +</button>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" onclick="document.getElementById('miModal').setAttribute('style', 'display: none');">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+
+              </div>
+          </div>
+
+          <script>
+            // Obtener el elemento del div
+            const miDiv = document.getElementById('miDiv');
+          
+            // Agregar un controlador de eventos de clic al div
+            miDiv.addEventListener('click', function() {
+              const miModal = document.getElementById('miModal');
+              // Agregar la clase 'show' para mostrar el modal
+              miModal.classList.add('show');
+              // Quitar la clase 'fade' para evitar la animación
+              miModal.classList.remove('fade');
+              // Agregar el atributo 'style' para mostrar el modal
+              miModal.setAttribute('style', 'display: block');
+            });
+
+          </script>
+
+          <!--Fin del modeal del componente card-->
+          <a class="mt-2 text-decoration-none" href="http://localhost:3000/api/1.0/views/login">Delete<img src="icons/trash3-fill.svg" class="mx-2 me-0" height="13px"></a>
+         
+        </div>
+      </div>
+
+  
+      <button type="button" class="btn btn-outline-secondary" style="width: 15rem;" onclick="console.log(document.getElementsByClassName('card'));">Tarjeta +</button>
+  </div>
+
+  <button type="button" class="btn btn-outline-secondary me-3 mx-3 mt-4 pt-2" style="width: 15rem;">Añadir Seccion +</button>
+  </div>
+
+</body>
+</html>
