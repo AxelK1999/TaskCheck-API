@@ -44,8 +44,11 @@ La misma presenta una version que contiene como base de datos un archivo JSON [u
 Las peticiones pueden realizarse en extensiones como Thunder o Postman, a los controladores:
 
 GET `http://localhost:3000/api/1.0/notes`
+
 PUT `http://localhost:3000/api/1.0/notes/card`
+
 POST `http://localhost:3000/api/1.0/notes/card`
+
 DELETE `http://localhost:3000/api/1.0/notes/card`
 
 **..........** 
