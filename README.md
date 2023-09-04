@@ -1,6 +1,7 @@
 # Proyecto: Api Task Check
 
-**Descripcion :** 
+**Descripcion :**
+
 Consiste en una api que permite administrar notas y listas de tareas a realizar de ususarios registrados previemente, estas estan organizadas dentro de un espacio de trabajo que posee cada ususario, esta compuesta por secciones (creadas y tituladas por el usuaruio) que contienen tarjetas, cada una de ellas con notas y listas de tareas correspondientes a la vinculadas y creadas para el cumplimiento de la actividad que represente esa tarjeta en particular. 
 
 La misma presenta una version que contiene como base de datos un archivo JSON [url + "J"] y otra como base de datos a MongoDB [url + "M"].  
