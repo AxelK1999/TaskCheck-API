@@ -42,7 +42,7 @@ La misma presenta una version que contiene como base de datos un archivo JSON [u
 
 ## Uso 
 
-Las peticiones pueden realizarse en extensiones como Thunder o Postman, a los controladores:
+Las peticiones pueden realizarse en extensiones como Thunder o Postman, por las rutas de los controladores:
 
 GET `http://localhost:3000/api/1.0/notes`
 
